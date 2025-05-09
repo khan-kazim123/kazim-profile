@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Kazim Khan - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+    }
+  
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+  
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+  
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+  
+    nav a:hover {
+      color: #00ffcc;
+    }
+  
+    video {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      display: block;
+    }
+  
+    section, .s, #projects {
+      padding: 60px 40px;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #00ffcc;
+      padding-left: 15px;
+    }
+  
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+  
+    .services div {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+  
+    .services div:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+  
+    .services img {
+      max-width: 60px;
+      margin-bottom: 15px;
+    }
+  
+    #projects h2 {
+      margin-bottom: 40px;
+    }
+  
+    #flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+  
+    #flex div {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      flex: 1 1 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+  
+    #flex div:hover {
+      transform: scale(1.05);
+    }
+  
+    .imgone {
+      width: 100px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .imgones {
+      border: none;
+      background: none;
+    }
+  
+    #contact p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+    }
+  
+    /* === Responsive Media Queries === */
+    @media (max-width: 1024px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      nav ul {
+        justify-content: center;
+      }
+  
+      section, .s, #projects {
+        padding: 50px 30px;
+      }
+  
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+  
+      header h1 {
+        font-size: 1.5rem;
+      }
+  
+      video {
+        height: 50vh;
+      }
+  
+      .services {
+        grid-template-columns: 1fr;
+      }
+  
+      #flex {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      #flex div {
+        flex: 1 1 100%;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.6rem;
+      }
+  
+      .imgone {
+        width: 80px;
+      }
+  
+      #contact p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1>Muhammad Kazim Khan</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <video autoplay muted loop src="./vid.mp4"></video>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate BSCS student with hands-on experience in Web Development, Data Analysis, and Blockchain. I also teach IT courses and am dedicated to delivering high-quality solutions and helping others grow technically.</p>
+    </section>
+
+    <div class="s">
+      <h2>Skills & Services</h2>
+      <div class="services" id="skills">
+        <div><img src="./Screenshot 2024-01-28 163142.png" alt=""><p>Programming: Python, JavaScript, C, C++, Java</p></div>
+        <div><img src="./web.png" alt=""><p>Web Dev: HTML, CSS, React.js, Node.js, Express.js</p></div>
+        <div><img src="./db.png" alt=""><p>Databases: MySQL, MongoDB</p></div>
+        <div><img src="./data.png" alt=""><p>Data Analysis: Cleaning, Visualization</p></div>
+        <div><img src="./blockchain.png" alt=""><p>Blockchain: Smart Contracts, DApps</p></div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <h2>My Projects</h2>
+      <div id="flex">
+        <div><a href="https://khan-kazim123.github.io/rentalweb/" target="_blank"><img class="imgone" src="./link.png" alt=""></a><p>Car Rent Management System</p></div>
+        <div><a href="https://tahabikes.000webhostapp.com/bikes/home.html" target="_blank"><img class="imgone" src="./prjct.png" alt=""></a><p>Bike Sales and Purchase</p></div>
+        <div><a href="pr.html" target="_blank"><img class="imgone" src="./p.png" alt=""></a><p>Euzen Solutions</p></div>
+      </div>
+    </div>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p><i class="fas fa-envelope"></i> mkazimkhan0@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 0322-2074039</p>
+      <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Muhammad Kazim Khan | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
